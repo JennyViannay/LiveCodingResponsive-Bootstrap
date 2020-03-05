@@ -1,6 +1,8 @@
-Ceci est un exemple de page web responsive qui utilise Bootstrap : 
+Installer Bootstrap dans un projet en 2 min !
 
-    CDN BOOTSTRAP ici : https://getbootstrap.com/docs/4.4/getting-started/introduction/
+## [Getting start here !](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
+    
+![Bootstrap Quick Start](https://zupimages.net/viewer.php?id=20/10/1aa7.png)
 
 
