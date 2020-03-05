@@ -1,0 +1,14 @@
+
+img {
+    max-height: 500px;
+}
+
+.space-invader {
+    height: 50px;
+}
+
+.space-green {
+    width: 50px;
+    background-image: linear-gradient(#2A99EA,  #EADC2A );
+    box-shadow: 5px 10px;
+}
