@@ -5,63 +5,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Coding Responsive</title>
-    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Placer le lien au avant de tous les autres styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Autres styles -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 
 <body>
-    <nav>
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+    <!-- Navbar copier/coller depuis https://getbootstrap.com/docs/4.4/components/navbar/ -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li>
-                    <a href="#">Features</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
                 </li>
-                <li>
-                    <a href="#">Pricing</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
                 </li>
-                <li>
-                    <a href="#">Disabled</a>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
-            </ul>
+              </ul>
+            </div>
+        </nav>
+        <!-- Carousel bootsrap -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/images/si1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/images/si3.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/images/si3.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
         </div>
-    </nav>
-    
-            <img class="d-block w-100" src="http://www.museecompagnonnage.fr/sites/default/files/styles/home_banner/public/2018-04-home-banner/banner-1.jpg?itok=WPKYrqey" alt="First slide">
-         
-            <img class="d-block w-100" src="http://www.museecompagnonnage.fr/sites/default/files/styles/home_banner/public/2018-04-home-banner/banner-6.jpg?itok=9YVWwveT" alt="Second slide">
-         
-            <img class="d-block w-100" src="http://www.museecompagnonnage.fr/sites/default/files/styles/home_banner/public/2018-04-home-banner/banner-5.jpg?itok=rtRLjn9N" alt="Third slide">
-          
-    <div class="">
-        <h1>This is a Simple HTML Web Page</h1>
-        <h2>A basic HTML page using popular markup</h2>
-        <h3>This is an H3</h3>
-
-        <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus urna neque, elementum et, auctor
-            vel,
-            vestibulum in, dui. Praesent laoreet. Aliquam semper ullamcorper augue. Integer vitae lorem. Suspendisse
-            commodo. Donec vulputate. Nunc vel pede vel turpis consectetuer fermentum. Praesent a nisl eu diam luctus
-            consectetuer. Phasellus at diam. Vestibulum turpis odio, bibendum interdum, adipiscing eu, facilisis id,
-            erat.
-            Nulla id magna id sapien molestie posuere. Nam faucibus. Donec commodo bibendum mi. Aliquam erat volutpat.
-            Praesent felis mi, elementum ut, condimentum nec, nonummy at, enim.</p>
-
-        <p class="">Integer sem velit, ornare eu, blandit ac, elementum sit amet, metus. Pellentesque in est
-            elementum est cursus
-            consectetuer. Pellentesque mattis purus id erat. Cras volutpat bibendum neque. Nunc a dui. Mauris a neque
-            cursus
-            lorem ultrices sagittis. Morbi ligula. Aenean venenatis justo id arcu. Cras pretium ipsum ut velit. Integer
-            pulvinar. Curabitur magna arcu, molestie at, rutrum at, gravida vulputate, nisl. Sed ipsum orci, accumsan
-            sed,
-            aliquet vel, tempor quis, arcu. Donec aliquam. In nulla nunc, tempor eu, laoreet id, tincidunt sit amet,
-            arcu.
-        </p>
-
-        <p>This is <a href="https://google.com">a link to google's web site.</a></p>
     </div>
+    
+    <div class="container">
+        <h1 class="my-5">This is a Simple HTML Web Page RESPONSIVE with BOOTSRAP</h1>
+        <div class="alert alert-primary text-center" role="alert">😎🤙</div>
+        
+        <!-- jumbotron Bootstrap -->
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple way to make quickly a functional responsive web page in 2 minutes !</p>
+            <hr class="my-4">
+            <p>Or if you préfères chiller en regardant des sites moches c'est par là 👇:</p>
+            <div class="text-center">
+                <a class="btn btn-primary btn-lg" href="http://ladecharge.foo.be/pages/merde.htm" role="button">La décharge des sites de merde 💩</a>
+            </div>
+        </div>
+        
+        <!-- Space Invader pour s'amuser -->
+        <div class="my-5">
+            <div class="row space-invader">
+                <div class="col-2"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-5"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-3"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-3"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-2"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-5"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+            <div class="row space-invader">
+                <div class="col-3"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1"></div>
+                <div class="col-1 space-green"></div>
+                <div class="col-1 space-green"></div>
+            </div>
+        </div>
+
+        <p>This is a link to <a target="_blank" href="https://getbootstrap.com/">getbootstrap.com</a></p>
+    </div>
+
+    
+    <!-- On met toujours les sripts JS (ou autres) à la fin de la page juste 
+    avant la fermeture de la balise <html>
+    Doc : Pourquoi mettre le JavaScript à la fin et le CSS au début ?
+    https://lehollandaisvolant.net/?d=2015/08/27/18/46/54-pourquoi-mettre-le-javascript-a-la-fin-et-le-css-au-debut -->
+
+    <!-- Scripts bootsrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
