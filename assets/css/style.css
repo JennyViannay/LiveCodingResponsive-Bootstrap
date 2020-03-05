@@ -1,0 +1,44 @@
+.space-invader {
+    height: 50px;
+}
+
+.space-green {
+    width: 50px;
+    background-image: linear-gradient(#630b7b, #00d4ff );
+    box-shadow: 3px 8px;
+    border: white solid 1px;
+}
+
+img {
+    max-width: 1100px;
+}
+
+/* Pour écraser un style bootstrap : */
+
+/* 
+    Par exemple si je souhaite écraser le style de la classe btn-primary
+
+        1 - Je récupère son style css grâce à l'inspecteur du navigateur :
+            .btn-primary {
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+
+        2 - Je remplace le nom de la classe et je change les attributs qui m'intéressent : 
+            .btn-mybtn-red {
+                color: grey;
+                background-color: red;
+                border-color: grey;
+            }
+
+        3 - Je n'oublie pas de changer aussi le nom de la classe sur l'élèment HTML.
+    
+    Et voilà c'est fini.
+
+
+    ATTENTION : Ne jamais changer le style directement sur une classe bootstrap, 
+    cela se répercutera sur l'ensemble des élèments qui portent la classe.
+    Il y aussi des risques de conflits entre les feuilles de style.
+
+*/
